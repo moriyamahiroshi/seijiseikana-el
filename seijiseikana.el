@@ -386,8 +386,8 @@
 
 (defcustom seijiseikana-sgml-elements-do-not-convert
   '("blockquote" "q" "a" "cite" "em" "code" "kbd" "samp")
-  "`seijiseikana-replace-string-by-alist' を `html-mode' 等でで使
-用したときに變換しない要素名のリスト。"
+  "`seijiseikana-replace-string-by-alist' を `html-mode' 等で使用
+したときに變換しない要素名のリスト。"
   :group 'seijiseikana
   :type 'list)
 
