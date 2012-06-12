@@ -1,4 +1,4 @@
-# Seijiseikana.el  <!-- -*- mode: markdown; coding: utf-8 -*- -->
+# Seijiseikana.el
 
 とりあへず。
 
