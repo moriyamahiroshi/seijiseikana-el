@@ -305,13 +305,13 @@
           ("龍" . "竜")
           ("龜" . "亀")
           ("戰歿" . "戦没")                  ;KAKIKAE
-          ("死歿" . "死沒")                  ;KAKIKAE
-          ("歿前" . "沒前")                  ;KAKIKAE
-          ("歿年" . "沒年")                  ;KAKIKAE
-          ("歿後" . "沒後")                  ;KAKIKAE
-          ("生歿" . "生沒")                  ;KAKIKAE
-          ("病歿" . "病沒")                  ;KAKIKAE
-          ("陣歿" . "陣沒")                  ;KAKIKAE
+          ("死歿" . "死没")                  ;KAKIKAE
+          ("歿前" . "没前")                  ;KAKIKAE
+          ("歿年" . "没年")                  ;KAKIKAE
+          ("歿後" . "没後")                  ;KAKIKAE
+          ("生歿" . "生没")                  ;KAKIKAE
+          ("病歿" . "病没")                  ;KAKIKAE
+          ("陣歿" . "陣没")                  ;KAKIKAE
           ("餘計" . "余計")                  ;KAKIKAE
           ("餘白" . "余白")                  ;KAKIKAE
           ("餘地" . "余地")                  ;KAKIKAE
