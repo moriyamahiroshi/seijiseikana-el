@@ -367,9 +367,37 @@
           ("全潰" . "全壊")                  ;KAKIKAE
           ("倒潰" . "倒壊")                  ;KAKIKAE
           ("企劃" . "企画")                  ;KAKIKAE
-          ;; ("付與" . "付与")                  ;KAKIKAE
-          ;; ("附屬" . "付属")                  ;KAKIKAE
-          ;; ("附加" . "付加")                  ;KAKIKAE
+          ("備へ附" . "備へ付")              ;KAKIKAE
+          ("備附き" . "備付き")              ;KAKIKAE
+          ("備附け" . "備付け")              ;KAKIKAE
+          ("傷附" . "傷付")                  ;KAKIKAE
+          ("受け附" . "受け付")              ;KAKIKAE
+          ("受附け" . "受付け")              ;KAKIKAE
+          ("思ひ附" . "思ひ付")              ;KAKIKAE
+          ("日附" . "日付")                  ;KAKIKAE
+          ("書き附" . "書き付")              ;KAKIKAE
+          ("書附け" . "書付け")              ;KAKIKAE
+          ("標準添附" . "標準添付")          ;KAKIKAE
+          ("氣附" . "気付")                  ;KAKIKAE
+          ("符號附" . "符号付")              ;KAKIKAE
+          ("色附け" . "色付け")              ;KAKIKAE
+          ("見附" . "見付")                  ;KAKIKAE
+          ("貼り附" . "貼り付")              ;KAKIKAE
+          ("貼附" . "貼付")                  ;KAKIKAE
+          ("送り附" . "送り付")              ;KAKIKAE
+          ("送附" . "送付")                  ;KAKIKAE
+          ("關聯附" . "関聯付")              ;KAKIKAE
+          ("附き" . "付き")                  ;KAKIKAE
+          ("附き合" . "付き合")              ;KAKIKAE
+          ("附け" . "付け")                  ;KAKIKAE
+          ("附け足" . "付け足")              ;KAKIKAE
+          ("附加" . "付加")                  ;KAKIKAE
+          ("附合" . "付合")                  ;KAKIKAE
+          ("附屬" . "付属")                  ;KAKIKAE
+          ("附與" . "付与")                  ;KAKIKAE
+          ("附足" . "付足")                  ;KAKIKAE
+          ("附録" . "付録")                  ;KAKIKAE
+          ("附隨" . "付随")                  ;KAKIKAE
           ("下尅上" . "下克上")              ;KAKIKAE
           ("一攫千金" . "一獲千金")          ;KAKIKAE
           ("根柢" . "根底")                  ;KAKIKAE
