@@ -304,64 +304,64 @@
           ("齡" . "齢")
           ("龍" . "竜")
           ("龜" . "亀")
-          ("餘計" . "余計")             ;KAKIKAE
-          ("餘白" . "余白")             ;KAKIKAE
-          ("餘地" . "余地")             ;KAKIKAE
-          ("防禦" . "防御")             ;KAKIKAE
-          ("關聯" . "関連")             ;KAKIKAE
-          ("闇夜" . "暗夜")             ;KAKIKAE
-          ("間歇泉" . "間欠泉")         ;KAKIKAE
-          ("鑿岩機" . "削岩機")         ;KAKIKAE
-          ("遺蹟" . "遺跡")             ;KAKIKAE
-          ("辨當" . "弁当")             ;KAKIKAE
-          ("豫測" . "予測")             ;KAKIKAE
-          ("豫定" . "予定")             ;KAKIKAE
-          ("豫報" . "予報")             ;KAKIKAE
-          ("豫告" . "予告")             ;KAKIKAE
-          ("誡告" . "戒告")             ;KAKIKAE
-          ("計劃" . "計画")             ;KAKIKAE
-          ("言訣" . "言訳")             ;?
-          ("言ひ訣" . "言ひ訳")         ;?
-          ("萎縮" . "委縮")             ;KAKIKAE
-          ("苑地" . "園地")             ;KAKIKAE
-          ("脚註" . "脚注")             ;KAKIKAE
-          ("聯絡" . "連絡")             ;KAKIKAE
-          ("缺片" . "欠片")             ;KAKIKAE
-          ("缺けば" . "欠けば")
-          ("缺け" . "欠け") ;KAKIKAE, MEMO: "か・ける【欠ける／×缺ける／×闕ける】" <http://dic.yahoo.co.jp/dsearch?enc=UTF-8&p=%E6%AC%A0%E3%81%91%E3%82%8B&dtype=0&dname=0na&stype=0&pagenum=1&index=03132900>
-          ("缺く" . "欠く") ;KAKIKAE
-          ("缺き" . "欠き")
-          ("缺か" . "欠こ")
-          ("缺か" . "欠か")
-          ("編輯" . "編集")                 ;KAKIKAE
-          ("皆既蝕" . "皆既食")             ;KAKIKAE
-          ("申し訣" . "申し訳")             ;?
-          ("理窟" . "理屈")                 ;KAKIKAE
-          ("現代仮名遣い" . "現代仮名遣い") ;無變換
-          ("火焔" . "火炎")                 ;KAKIKAE
-          ("潰走" . "壊走")                 ;KAKIKAE
-          ("潰滅" . "壊滅")                 ;KAKIKAE
-          ("潰乱" . "壊乱")                 ;KAKIKAE
-          ("決潰" . "決壊")                 ;KAKIKAE
-          ("暗誦" . "暗唱")                 ;KAKIKAE
-          ("按分" . "案分")                 ;KAKIKAE
-          ("慰藉料" . "慰謝料")             ;KAKIKAE
-          ("意嚮" . "意向")                 ;KAKIKAE
-          ("恩誼" . "恩義")                 ;KAKIKAE
-          ("当用漢字" . "当用漢字")         ;無變換
-          ("崩潰" . "崩壊")                 ;KAKIKAE
-          ("叡智" . "英知")                 ;KAKIKAE
-          ("叡才" . "英才")                 ;KAKIKAE
-          ("半潰" . "半壊")                 ;KAKIKAE
-          ("區劃" . "区画")                 ;KAKIKAE
-          ("勘辨" . "勘弁")                 ;KAKIKAE
-          ("制禦" . "制御")                 ;KAKIKAE
-          ("全潰" . "全壊")                 ;KAKIKAE
-          ("倒潰" . "倒壊")                 ;KAKIKAE
-          ("企劃" . "企画")                 ;KAKIKAE
-          ;; ("付與" . "付与")                   ;KAKIKAE
-          ;; ("附屬" . "付属")                   ;KAKIKAE
-          ;; ("附加" . "付加")                   ;KAKIKAE
+          ("餘計" . "余計")                  ;KAKIKAE
+          ("餘白" . "余白")                  ;KAKIKAE
+          ("餘地" . "余地")                  ;KAKIKAE
+          ("防禦" . "防御")                  ;KAKIKAE
+          ("關聯" . "関連")                  ;KAKIKAE
+          ("闇夜" . "暗夜")                  ;KAKIKAE
+          ("間歇泉" . "間欠泉")              ;KAKIKAE
+          ("鑿岩機" . "削岩機")              ;KAKIKAE
+          ("遺蹟" . "遺跡")                  ;KAKIKAE
+          ("辨當" . "弁当")                  ;KAKIKAE
+          ("豫測" . "予測")                  ;KAKIKAE
+          ("豫定" . "予定")                  ;KAKIKAE
+          ("豫報" . "予報")                  ;KAKIKAE
+          ("豫告" . "予告")                  ;KAKIKAE
+          ("誡告" . "戒告")                  ;KAKIKAE
+          ("計劃" . "計画")                  ;KAKIKAE
+          ("言訣" . "言訳")                  ;?
+          ("言ひ訣" . "言ひ訳")              ;?
+          ("萎縮" . "委縮")                  ;KAKIKAE
+          ("苑地" . "園地")                  ;KAKIKAE
+          ("脚註" . "脚注")                  ;KAKIKAE
+          ("聯絡" . "連絡")                  ;KAKIKAE
+          ("缺片" . "欠片")                  ;KAKIKAE
+          ("缺けば" . "欠けば")              ;
+          ("缺け" . "欠け")                  ;KAKIKAE, MEMO: 欠/缺/闕
+          ("缺く" . "欠く")                  ;KAKIKAE
+          ("缺き" . "欠き")                  ;
+          ("缺か" . "欠こ")                  ;
+          ("缺か" . "欠か")                  ;
+          ("編輯" . "編集")                  ;KAKIKAE
+          ("皆既蝕" . "皆既食")              ;KAKIKAE
+          ("申し訣" . "申し訳")              ;?
+          ("理窟" . "理屈")                  ;KAKIKAE
+          ("現代仮名遣い" . "現代仮名遣い")  ;無變換
+          ("火焔" . "火炎")                  ;KAKIKAE
+          ("潰走" . "壊走")                  ;KAKIKAE
+          ("潰滅" . "壊滅")                  ;KAKIKAE
+          ("潰乱" . "壊乱")                  ;KAKIKAE
+          ("決潰" . "決壊")                  ;KAKIKAE
+          ("暗誦" . "暗唱")                  ;KAKIKAE
+          ("按分" . "案分")                  ;KAKIKAE
+          ("慰藉料" . "慰謝料")              ;KAKIKAE
+          ("意嚮" . "意向")                  ;KAKIKAE
+          ("恩誼" . "恩義")                  ;KAKIKAE
+          ("当用漢字" . "当用漢字")          ;無變換
+          ("崩潰" . "崩壊")                  ;KAKIKAE
+          ("叡智" . "英知")                  ;KAKIKAE
+          ("叡才" . "英才")                  ;KAKIKAE
+          ("半潰" . "半壊")                  ;KAKIKAE
+          ("區劃" . "区画")                  ;KAKIKAE
+          ("勘辨" . "勘弁")                  ;KAKIKAE
+          ("制禦" . "制御")                  ;KAKIKAE
+          ("全潰" . "全壊")                  ;KAKIKAE
+          ("倒潰" . "倒壊")                  ;KAKIKAE
+          ("企劃" . "企画")                  ;KAKIKAE
+          ;; ("付與" . "付与")                  ;KAKIKAE
+          ;; ("附屬" . "付属")                  ;KAKIKAE
+          ;; ("附加" . "付加")                  ;KAKIKAE
           ("下尅上" . "下克上")              ;KAKIKAE
           ("一攫千金" . "一獲千金")          ;KAKIKAE
           ("根柢" . "根底")                  ;KAKIKAE
