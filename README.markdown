@@ -17,6 +17,9 @@ Add the following code to your `~/.emacs.d/init.el` or `~/.emacs.el`:
 
   - `M-x seijiseikana-ryakuji-region`: リージョン内の「正字」を「略字」へ變換する。
 
+  - `seijiseikana-upcase-kana-region`: リージョン内の小書きの假名
+    (ぁぃぅゃゅょっ…等) を通常の假名 (あいうやゆよつ…) へ變換する。
+
 ### Tutorial
 
 畫像附きの分り易い解説を@nakinorさんに書いていただきました。ありがたうございます。

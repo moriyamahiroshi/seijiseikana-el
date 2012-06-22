@@ -52,6 +52,32 @@
                 (setq result context)))
           (if result t))))))
 
+(defun seijiseikana-upcase-kana-character (char)
+  (cond
+   ((or (char= char ?っ)
+	(and (= (% char 2) 1)
+	     (or (and (>= char #x30E3) (<= char #x30E7))   ;ャュョ
+		 (and (>= char #x30A1) (<= char #x30A9))   ;ァィゥェォ
+		 (and (>= char #x3083) (<= char #x3087))   ;ゃゅょ
+		 (and (>= char #x3041) (<= char #x3049)))) ;ぁぃぅぇぉ
+	(char= char ?ゎ))
+    (1+ char))
+   ((char= char ?ヵ) ?カ)
+   ((char= char ?ヶ) ?ケ)
+   ((char= char ?ゕ) ?か)
+   ((char= char ?ゖ) ?け)
+   ((and (>= char #x31F0) (<= char #x31FF))
+    (cond ((char= char ?ㇰ) ?ク) ((char= char ?ㇱ) ?シ) ((char= char ?ㇲ) ?ス)
+	  ((char= char ?ㇳ) ?ト) ((char= char ?ㇴ) ?ヌ) ((char= char ?ㇵ) ?ハ)
+	  ((char= char ?ㇶ) ?ヒ) ((char= char ?ㇷ) ?フ) ((char= char ?ㇸ) ?ヘ)
+	  ((char= char ?ㇹ) ?ホ) ((char= char ?ㇺ) ?ム) ((char= char ?ㇻ) ?ラ)
+	  ((char= char ?ㇼ) ?リ) ((char= char ?ㇽ) ?ル) ((char= char ?ㇾ) ?レ)
+	  ((char= char ?ㇿ) ?ロ)))
+   (t
+    char)))
+
+(seijiseikana-upcase-kana-character ?a)
+
 (defvar seijiseikana-seiji-ryakuji-alist
   (sort '(("乘" . "乗")
           ("亂" . "乱")
@@ -478,6 +504,21 @@ cdr部の文字列に置換へる。
   (seijiseikana-replace-string-by-alist seijiseikana-ryakuji-seiji-alist
                                         start end))
 
+(defun seijiseikana-upcase-kana-region (start end)
+  "リージョン内の小書きの假名(ぁぃぅゃゅょっ…等)を通常の假名(あい
+うやゆよつ…)へ變換する。"
+  (interactive "r")
+  (save-excursion
+    (save-restriction
+      (narrow-to-region start end)
+      (goto-char start)
+      (while (not (= (point) end))
+        (let* ((orig-char (following-char))
+               (char (seijiseikana-upcase-kana-character orig-char)))
+	  (if (= char orig-char)
+              (forward-char 1)
+            (delete-char 1)
+            (insert-char char 1)))))))
 
 (provide 'seijiseikana)
 ;;; seijiseikana.el ends here
