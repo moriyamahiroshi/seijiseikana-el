@@ -54,29 +54,27 @@
 
 (defun seijiseikana-upcase-kana-character (char)
   (cond
-   ((or (char= char ?っ)
+   ((or (= char ?っ)
 	(and (= (% char 2) 1)
 	     (or (and (>= char #x30E3) (<= char #x30E7))   ;ャュョ
 		 (and (>= char #x30A1) (<= char #x30A9))   ;ァィゥェォ
 		 (and (>= char #x3083) (<= char #x3087))   ;ゃゅょ
 		 (and (>= char #x3041) (<= char #x3049)))) ;ぁぃぅぇぉ
-	(char= char ?ゎ))
+	(= char ?ゎ))
     (1+ char))
-   ((char= char ?ヵ) ?カ)
-   ((char= char ?ヶ) ?ケ)
-   ((char= char ?ゕ) ?か)
-   ((char= char ?ゖ) ?け)
+   ((= char ?ヵ) ?カ)
+   ((= char ?ヶ) ?ケ)
+   ((= char ?ゕ) ?か)
+   ((= char ?ゖ) ?け)
    ((and (>= char #x31F0) (<= char #x31FF))
-    (cond ((char= char ?ㇰ) ?ク) ((char= char ?ㇱ) ?シ) ((char= char ?ㇲ) ?ス)
-	  ((char= char ?ㇳ) ?ト) ((char= char ?ㇴ) ?ヌ) ((char= char ?ㇵ) ?ハ)
-	  ((char= char ?ㇶ) ?ヒ) ((char= char ?ㇷ) ?フ) ((char= char ?ㇸ) ?ヘ)
-	  ((char= char ?ㇹ) ?ホ) ((char= char ?ㇺ) ?ム) ((char= char ?ㇻ) ?ラ)
-	  ((char= char ?ㇼ) ?リ) ((char= char ?ㇽ) ?ル) ((char= char ?ㇾ) ?レ)
-	  ((char= char ?ㇿ) ?ロ)))
+    (cond ((= char ?ㇰ) ?ク) ((= char ?ㇱ) ?シ) ((= char ?ㇲ) ?ス)
+	  ((= char ?ㇳ) ?ト) ((= char ?ㇴ) ?ヌ) ((= char ?ㇵ) ?ハ)
+	  ((= char ?ㇶ) ?ヒ) ((= char ?ㇷ) ?フ) ((= char ?ㇸ) ?ヘ)
+	  ((= char ?ㇹ) ?ホ) ((= char ?ㇺ) ?ム) ((= char ?ㇻ) ?ラ)
+	  ((= char ?ㇼ) ?リ) ((= char ?ㇽ) ?ル) ((= char ?ㇾ) ?レ)
+	  ((= char ?ㇿ) ?ロ)))
    (t
     char)))
-
-(seijiseikana-upcase-kana-character ?a)
 
 (defvar seijiseikana-seiji-ryakuji-alist
   (sort '(("乘" . "乗")
