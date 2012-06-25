@@ -28,4 +28,4 @@ Add the following code to your `~/.emacs.d/init.el` or `~/.emacs.el`:
 
 ## Author
 
-  - MORIYAMA Hiroshi (@moriyama164) <hiroshi@kvd.biglobe.ne.jp>
+  - MORIYAMA Hiroshi (Twitter ID: moriyama164) <hiroshi@kvd.biglobe.ne.jp>
