@@ -41,16 +41,17 @@
         (element-name (upcase element-name)))
     (save-excursion
       (save-restriction
-        (widen)
-        (let (context)
-          (while (setq context (sgml-get-context))
-            (if (member element-name
-                        (mapcar #'(lambda (tag)
-                                    (seijiseikana-sgml-tag-name-is element-name
-                                                                   tag))
-                                context))
-                (setq result context)))
-          (if result t))))))
+        (save-match-data
+          (widen)
+          (let (context)
+            (while (setq context (sgml-get-context))
+              (if (member element-name
+                          (mapcar #'(lambda (tag)
+                                      (seijiseikana-sgml-tag-name-is element-name
+                                                                     tag))
+                                  context))
+                  (setq result context)))
+            (if result t)))))))
 
 (defun seijiseikana-upcase-kana-character (char)
   (cond
