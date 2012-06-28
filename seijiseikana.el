@@ -490,14 +490,8 @@ cdr部の文字列に置換へる。
 (defun seijiseikana-ryakuji-region (start end)
   (interactive "r")
   "リージョン内の正字を略字に變換する。"
-  (save-excursion
-    (save-restriction
-      (narrow-to-region start end)
-      (goto-char (point-min))
-      (let ((re-seiji (mapconcat 'car seijiseikana-seiji-ryakuji-alist "\\|")))
-        (while (re-search-forward re-seiji nil t)
-          (replace-match (cdr (assoc (match-string 0)
-                                     seijiseikana-seiji-ryakuji-alist))))))))
+  (seijiseikana-replace-string-by-alist seijiseikana-seiji-ryakuji-alist
+                                        start end))
 
 (defun seijiseikana-seiji-region (start end)
   (interactive "r")
