@@ -472,20 +472,20 @@ cdr部の文字列に置換へる。
 リスト以外の非NILであれば、變換對象を制限しない。"
   (save-excursion
     (save-restriction
-      (narrow-to-region start end)
-      (goto-char (point-min))
-      (let ((re (regexp-opt (mapcar 'car alist))))
-        (while (re-search-forward re nil t)
-          (if (save-match-data
-                (not (member
+      (save-match-data
+        (narrow-to-region start end)
+        (goto-char (point-min))
+        (let ((re (regexp-opt (mapcar 'car alist))))
+          (while (re-search-forward re nil t)
+            (if (not (member
                       nil
                       (mapcar
                        (lambda (element-name)
                          (not (seijiseikana-point-inside-sgml-element-p element-name)))
                        (or (and (listp sgml-elements-do-not-convert)
                                 sgml-elements-do-not-convert)
-                           seijiseikana-sgml-elements-do-not-convert)))))
-              (replace-match (cdr (assoc (match-string 0) alist)))))))))
+                           seijiseikana-sgml-elements-do-not-convert))))
+                (replace-match (cdr (assoc (match-string 0) alist))))))))))
 
 (defun seijiseikana-ryakuji-region (start end)
   (interactive "r")
