@@ -75,6 +75,18 @@
                     #'seijiseikana-ryakuji-region)
                    (match-data)))))
 
+;;; Convert KAKIKAE Kanji
+
+(ert-deftest test-seijiseikana-seiji-region/kakikae-kanji-FU ()
+  (let ((target-text "付け足す・付加・付与")
+        (expected    "附け足す・附加・付與"))
+    (should (equal expected
+                   (with-temp-buffer
+                     (insert target-text)
+                     (seijiseikana-seiji-region (point-min) (point-max))
+                     (buffer-substring-no-properties (point-min)
+                                                     (point-max)))))))
+
 
 (ert-run-tests-batch-and-exit)
 ;;; seijiseikana-test.el ends here
