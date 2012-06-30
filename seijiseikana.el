@@ -516,5 +516,34 @@ cdr部の文字列に置換へる。
             (delete-char 1)
             (insert-char char 1)))))))
 
+;;; Menu Commands
+
+(require 'easymenu)
+
+(defvar seijiseikana-menu-spec-en
+  '("Seijiseikana"
+    ["Replace from RYAKUJI to SEIJI Region"
+     seijiseikana-seiji-region mark-active]
+    ["Replace from SEIJI to RYAKUJI Region"
+     seijiseikana-ryakuji-region mark-active]))
+
+(defvar seijiseikana-menu-spec-ja
+  '("Seijiseikana"
+    ["リージョンの漢字を正字に變換"
+     seijiseikana-seiji-region mark-active]
+    ["リージョンの漢字を略字に變換"
+     seijiseikana-ryakuji-region mark-active]))
+
+(easy-menu-define seijiseikana-menu global-map "seijiseikana"
+  (cond
+   ((or (equal current-language-environment "Japanese")
+        (string-match "\\`ja_JP[.@]" (or (getenv "LC_MESSAGES") "")))
+    seijiseikana-menu-spec-ja)
+   (t
+    seijiseikana-menu-spec-en)))
+
+(add-submenu nil seijiseikana-menu "Help")
+
+
 (provide 'seijiseikana)
 ;;; seijiseikana.el ends here

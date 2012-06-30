@@ -35,7 +35,15 @@ MEMO: `upcase-word' にアドヴァイスを追加(defadvice)するのは「や�
 
 ** SOMEDAY 漢字だけでなく假名遣も變換(elispでの優先度は低)
 
-** TODO Emacsのメニューからコマンドを實行できるやうにする
+** DONE Emacsのメニューからコマンドを實行できるやうにする
+
+nakinorさんの features-menu ブランチを基にして實裝した。
+
+ - "Pull Request #1: added command menus by nakinor · moriyamahiroshi/seijiseikana-el · GitHub"
+   <https://github.com/moriyamahiroshi/seijiseikana-el/pull/1>
+
+ - "added command menus · ced8828 · nakinor/seijiseikana-el · GitHub"
+   <https://github.com/nakinor/seijiseikana-el/commit/ced8828ceb91bf570ef14f124a6727ac6685005a>
 
 ** TODO -region 系だけでなく -buffer 系(バッファ全體に適用する)コマンドも用意する
 
